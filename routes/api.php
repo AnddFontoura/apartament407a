@@ -16,3 +16,15 @@ use Illuminate\Http\Request;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+$group = [
+    'middleware' => ['auth:api'],
+    'prefix' => ['payment-method']
+];
+
+//Route::group($group, function() {
+    Route::get('payment-method','Api\PaymentMethodController@index');
+    Route::post('payment-method/save','Api\PaymentMethodController@store');
+    Route::post('payment-method/save/{id}','Api\PaymentMethodController@update');
+    Route::delete('payment-method/{id}', 'Api\PaymentMethodController@destroy');
+//});
