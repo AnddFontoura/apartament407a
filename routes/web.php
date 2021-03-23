@@ -11,10 +11,15 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
 Auth::routes();
 
+Route::get('/','HomeController@index');
 Route::get('/home', 'HomeController@index')->name('home');
+
+
+Route::prefix('payment-method')->middleware('auth')->group( function() {
+    Route::get('/','PaymentMethodController@index');
+    Route::post('save','PaymentMethodController@store');
+    Route::post('save/{id}','PaymentMethodController@update');
+    Route::delete('{id}', 'PaymentMethodController@destroy');
+});

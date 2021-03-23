@@ -22,9 +22,9 @@ $group = [
     'prefix' => ['payment-method']
 ];
 
-//Route::group($group, function() {
-    Route::get('payment-method','Api\PaymentMethodController@index');
-    Route::post('payment-method/save','Api\PaymentMethodController@store');
-    Route::post('payment-method/save/{id}','Api\PaymentMethodController@update');
-    Route::delete('payment-method/{id}', 'Api\PaymentMethodController@destroy');
-//});
+Route::prefix('payment-method')->middleware('auth:api')->group( function() {
+    Route::get('/','Api\PaymentMethodController@index');
+    Route::post('save','Api\PaymentMethodController@store');
+    Route::post('save/{id}','Api\PaymentMethodController@update');
+    Route::delete('{id}', 'Api\PaymentMethodController@destroy');
+});

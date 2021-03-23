@@ -2,6 +2,4 @@
 
 @section('adminlte_content')
 
-
-
 @endsection
