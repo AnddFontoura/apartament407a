@@ -11,7 +11,7 @@ class CreateRecurringPaymentsTable extends Migration
      *
      * @return void
      */
-    public function up()
+    public function up(): void
     {
         Schema::create('recurring_payments', function (Blueprint $table) {
             $table->bigIncrements('id');
@@ -36,7 +36,7 @@ class CreateRecurringPaymentsTable extends Migration
      *
      * @return void
      */
-    public function down()
+    public function down(): void
     {
         Schema::table('recurring_payments', function (Blueprint $table) {
             $table->dropForeign(['payment_method_id']);
