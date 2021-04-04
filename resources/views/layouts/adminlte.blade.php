@@ -30,54 +30,82 @@
                 </a>
                 <ul class="list-unstyled ps-0">
                     <li class="mb-1">
-                        <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="true">
-                            Home
+                        <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#system-collapse" aria-expanded="false">
+                            Administradora
                         </button>
-                        <div class="collapse show" id="home-collapse">
+                        <div class="collapse" id="system-collapse" style="">
                             <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                                <li><a href="#" class="link-dark rounded">Overview</a></li>
-                                <li><a href="#" class="link-dark rounded">Updates</a></li>
-                                <li><a href="#" class="link-dark rounded">Reports</a></li>
+                                <li><a href="#" class="link-dark rounded">Condominios</a></li>
+                                <li><a href="#" class="link-dark rounded">Apartamentos</a></li>
+                                <li><a href="#" class="link-dark rounded">Reservas</a></li>
+                                <li><a href="#" class="link-dark rounded">Apartamentos</a></li>
+                                <li><a href="#" class="link-dark rounded">Situação Financeira</a></li>
+                                <li><a href="#" class="link-dark rounded">Notificação</a></li>
+                                <li><a href="#" class="link-dark rounded">Reclamações</a></li>
+                                <li><a href="#" class="link-dark rounded">Anuncios</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="mb-1">
+                        <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#system-collapse" aria-expanded="false">
+                            Síndico
+                        </button>
+                        <div class="collapse" id="system-collapse" style="">
+                            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                <li><a href="#" class="link-dark rounded">Condominios</a></li>
+                                <li><a href="#" class="link-dark rounded">Apartamentos</a></li>
+                                <li><a href="#" class="link-dark rounded">Reservas</a></li>
+                                <li><a href="#" class="link-dark rounded">Apartamentos</a></li>
+                                <li><a href="#" class="link-dark rounded">Situação Financeira</a></li>
+                                <li><a href="#" class="link-dark rounded">Notificação</a></li>
+                                <li><a href="#" class="link-dark rounded">Reclamações</a></li>
+                                <li><a href="#" class="link-dark rounded">Anuncios</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="mb-1">
+                        <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="false">
+                            Condominio
+                        </button>
+                        <div class="collapse" id="home-collapse" style="">
+                            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                <li><a href="#" class="link-dark rounded">Proprietarios</a></li>
+                                <li><a href="#" class="link-dark rounded">Moradores</a></li>
+                                <li><a href="#" class="link-dark rounded">Apartamentos</a></li>
+                                <li><a href="#" class="link-dark rounded">Balancetes</a></li>
+                                <li><a href="#" class="link-dark rounded">Espaços Coletivos</a></li>
+                                <li><a href="#" class="link-dark rounded">Reservas</a></li>
+                                <li><a href="#" class="link-dark rounded">Reclamações</a></li>
+                                <li><a href="#" class="link-dark rounded">Anuncios</a></li>
                             </ul>
                         </div>
                     </li>
                     <li class="mb-1">
                         <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#dashboard-collapse" aria-expanded="false">
-                            Dashboard
+                            Apartamento
                         </button>
                         <div class="collapse" id="dashboard-collapse" style="">
                             <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                                <li><a href="#" class="link-dark rounded">Overview</a></li>
-                                <li><a href="#" class="link-dark rounded">Weekly</a></li>
-                                <li><a href="#" class="link-dark rounded">Monthly</a></li>
-                                <li><a href="#" class="link-dark rounded">Annually</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li class="mb-1">
-                        <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#orders-collapse" aria-expanded="false">
-                            Orders
-                        </button>
-                        <div class="collapse" id="orders-collapse">
-                            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                                <li><a href="#" class="link-dark rounded">New</a></li>
-                                <li><a href="#" class="link-dark rounded">Processed</a></li>
-                                <li><a href="#" class="link-dark rounded">Shipped</a></li>
-                                <li><a href="#" class="link-dark rounded">Returned</a></li>
+                                <li><a href="#" class="link-dark rounded">Aluguel</a></li>
+                                <li><a href="#" class="link-dark rounded">Condominio</a></li>
+                                <li><a href="#" class="link-dark rounded">Notificações</a></li>
+                                <li><a href="#" class="link-dark rounded">Reservas</a></li>
+                                <li><a href="#" class="link-dark rounded">Lista de Compras</a></li>
+                                <li><a href="#" class="link-dark rounded">Financeiro</a></li>
                             </ul>
                         </div>
                     </li>
                     <li class="border-top my-3"></li>
                     <li class="mb-1">
                         <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#account-collapse" aria-expanded="false">
-                            Account
+                            Configurações
                         </button>
                         <div class="collapse" id="account-collapse">
                             <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                                <li><a href="#" class="link-dark rounded">New...</a></li>
-                                <li><a href="#" class="link-dark rounded">Profile</a></li>
-                                <li><a href="#" class="link-dark rounded">Settings</a></li>
-                                <li><a href="#" class="link-dark rounded">Sign out</a></li>
+                                <li><a href="#" class="link-dark rounded">Convidar usuário</a></li>
+                                <li><a href="#" class="link-dark rounded">Dados Cadastrais</a></li>
+                                <li><a href="#" class="link-dark rounded">Preferências</a></li>
+                                <li><a href="#" class="link-dark rounded">Deslogar</a></li>
                             </ul>
                         </div>
                     </li>
