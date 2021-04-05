@@ -16,6 +16,7 @@ class CreateShoppingListItensTable extends Migration
         Schema::create('shopping_list_items', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->unsignedBigInteger('shopping_list_id');
+            $table->unsignedBigInteger('user_id');
             $table->string('name',500);
             $table->text('description');
             $table->float('price')->nullable(true);
