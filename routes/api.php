@@ -22,9 +22,24 @@ $group = [
     'prefix' => ['payment-method']
 ];
 
-Route::prefix('payment-method')->middleware('auth:api')->group( function() {
+Route::prefix('payment-methods')->middleware('auth:api')->group( function() {
     Route::get('/','Api\PaymentMethodController@index');
     Route::post('save','Api\PaymentMethodController@store');
     Route::post('save/{id}','Api\PaymentMethodController@update');
     Route::delete('{id}', 'Api\PaymentMethodController@destroy');
+});
+
+
+Route::prefix('shopping-lists')->middleware('auth:api')->group( function() {
+    Route::get('/','Api\ShoppingListController@index');
+    Route::post('save','Api\ShoppingListController@store');
+    Route::post('save/{id}','Api\ShoppingListController@update');
+    Route::delete('{id}', 'Api\ShoppingListController@destroy');
+});
+
+Route::prefix('shopping-list-itens')->middleware('auth:api')->group( function() {
+    Route::get('/','Api\ShoppingListItemController@index');
+    Route::post('save','Api\ShoppingListItemController@store');
+    Route::post('save/{id}','Api\ShoppingListItemController@update');
+    Route::delete('{id}', 'Api\ShoppingListItemController@destroy');
 });

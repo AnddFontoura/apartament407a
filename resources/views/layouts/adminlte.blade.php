@@ -86,11 +86,11 @@
                         </button>
                         <div class="collapse" id="dashboard-collapse" style="">
                             <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                <li><a href="{{ url('shopping-lists') }}" class="link-dark rounded">Lista de Compras</a></li>
                                 <li><a href="#" class="link-dark rounded">Aluguel</a></li>
                                 <li><a href="#" class="link-dark rounded">Condominio</a></li>
                                 <li><a href="#" class="link-dark rounded">Notificações</a></li>
                                 <li><a href="#" class="link-dark rounded">Reservas</a></li>
-                                <li><a href="#" class="link-dark rounded">Lista de Compras</a></li>
                                 <li><a href="#" class="link-dark rounded">Financeiro</a></li>
                             </ul>
                         </div>

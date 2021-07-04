@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use App\ShoppingListItems;
 use Illuminate\Http\Request;
 
-class ShoppingListItemsController extends Controller
+class ShoppingListItemController extends Controller
 {
     /**
      * Display a listing of the resource.
